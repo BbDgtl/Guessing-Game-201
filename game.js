@@ -6,7 +6,7 @@
 //In a sequence of alerts to user, give msg repeating answers they gave
 //Creating if/else statements for each ?
 var userName = prompt("First of all, what's YOUR name?");
-var gameOn = prompt("Hello there, " + userName + " want to play a game?").toLowerCase();
+var gameOn = prompt("Hello there, " + userName + ". Want to play a game?").toLowerCase();
   if ((gameOn === "yes") || (gameOn === "y")) {
     alert("Right on! Let's begin.");
   } else {
@@ -46,9 +46,19 @@ var timeHere = prompt("How many years have I lived in Seattle?");
   alert("You guessed: " + timeHere);
     if (timeHere > "13") {
       alert("Too high. How old do you think I am, " + userName + "?");
-    } else if (timeHere < 13) {
+    } else if (timeHere < "13") {
       alert("Too low, sorry.");
     } else {
       alert("Correct! I've lived here for 13 years now.");
+    }
+
+//adding a 5th yes/no question to the game
+var commute = prompt("Do I live within 5 miles of Codefellows?");
+  console.log("No, I live 7 miles away.");
+  alert("You guessed: " + commute);
+    if ((commute === "yes") || (commute === "y")) {
+      alert("Nope; sorry, " + userName + ". I live about 7 miles south of Codefellows.");
+    } else {
+      alert("Correct! I live about 7 miles south of Codefellows.");
     }
 
