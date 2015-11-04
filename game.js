@@ -17,7 +17,7 @@ var born = prompt(userName + ", was I born here in Washington?").toLowerCase();
 console.log("correct answer is no");
 alert("You guessed: " + born);
   if ((born === "no") || (born === "n")) {
-    alert("That's correct " + userName + ", I was born in the Philippines, but I have no memory of it.");
+    alert("That's correct " + userName + ", I was born in the Philippines.");
   } else {
     alert("I'm sorry, " + userName + ", but you're wrong. I was born in the Philippines.");
   }
@@ -57,20 +57,21 @@ var commute = prompt("Do I live within 5 miles of Codefellows?");
   console.log("No, I live 7 miles away.");
   alert("You guessed: " + commute);
     if ((commute === "yes") || (commute === "y")) {
-      alert("Nope; sorry, " + userName + ". I live about 7 miles south of Codefellows.");
+      alert("Nope. Sorry, " + userName + ". I live about 7 miles south of Codefellows.");
     } else {
       alert("Correct! I live about 7 miles south of Codefellows.");
     }
 
 //adding a 6th question to the game, this time with a numeric value.
-var ranNum = Math.floor(Math.random()) + 1;
+var ranNum = Math.floor(Math.random() * 10) + 1;
 var tryAGuess = "I'm thinking of a number between 1 and 10, can you guess it?";
 var turns = 5;
   console.log("It is " + ranNum);
   while (turns > 0) {
-    var guess = prompt(tryAGuess + " You have " + turns + " turns left!");
+    var guess = Number(prompt(tryAGuess + " You have " + turns + " turns left!"));
     if (guess === ranNum) {
       alert("Correct! You win all the things!");
+      break;
     } else {
       tryAGuess = "WRONG!";
       if (guess < ranNum) {
