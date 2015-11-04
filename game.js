@@ -62,3 +62,27 @@ var commute = prompt("Do I live within 5 miles of Codefellows?");
       alert("Correct! I live about 7 miles south of Codefellows.");
     }
 
+//adding a 6th question to the game, this time with a numeric value.
+var ranNum = Math.floor(Math.random()) + 1;
+var tryAGuess = "I'm thinking of a number between 1 and 10, can you guess it?";
+var turns = 5;
+  console.log("It is " + ranNum);
+  while (turns > 0) {
+    var guess = prompt(tryAGuess + " You have " + turns + " turns left!");
+    if (guess === ranNum) {
+      alert("Correct! You win all the things!");
+    } else {
+      tryAGuess = "WRONG!";
+      if (guess < ranNum) {
+        alert(tryAGuess + " Too low.");
+      } else if (guess > ranNum) {
+        alert(tryAGuess + " Too high.");
+      }
+      turns = turns - 1;
+    }
+  }
+
+
+
+
+
