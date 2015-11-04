@@ -7,3 +7,13 @@ inform of whether the user is correct. If incorrect, the user will be informed
 of the correct answer.
 
 The game also writes the correct answer to console.log.
+
+*~JOKE TIME~*
+
+"A blind man walks into a bar...
+
+
+
+
+
+....And then a chair, and then a table....."
