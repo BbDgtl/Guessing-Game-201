@@ -18,6 +18,8 @@ The game also writes the correct answer to console.log.
 
 ....And then a chair, and then a table....."
 
+*******************************************************************************
+
 11/06/2015
 
 The Driver was: Bobby Spencer
@@ -26,3 +28,11 @@ The Navigator was: Bobby Spencer :)
 Initially, a function was added to each question, but realized in doing so, the
 entire program would run regardless if the user said they didn't want to play.
 Created one function to encompass, then added DOM manipulation to the alerts.
+
+*******************************************************************************
+
+11/07/2015
+
+Added some CSS styling as well as images to correct answers.
+Added incorrect answers displaying in red text and correct answers displaying in
+green.
