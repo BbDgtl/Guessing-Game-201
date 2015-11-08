@@ -5,12 +5,18 @@
 //console log the results for each question
 //In a sequence of alerts to user, give msg repeating answers they gave
 //Creating if/else statements for each ?
+
+//Adding functions to the game 11/06/2015
+
+function guessingGame() {
+
 var userName = prompt("First of all, what's YOUR name?");
 var gameOn = prompt("Hello there, " + userName + ". Want to play a game?").toLowerCase();
   if ((gameOn === "yes") || (gameOn === "y")) {
     alert("Right on! Let's begin.");
   } else {
-    alert("Too bad, I don't know how to stop!");
+    alert("That's a shame, maybe next time!");
+    return;
   }
 
 var born = prompt(userName + ", was I born here in Washington?").toLowerCase();
@@ -66,9 +72,9 @@ var commute = prompt("Do I live within 5 miles of Codefellows?");
 var ranNum = Math.floor(Math.random() * 10) + 1;
 var tryAGuess = "I'm thinking of a number between 1 and 10, can you guess it?";
 var turns = 5;
-  console.log("It is " + ranNum);
+console.log("It is " + ranNum);
   while (turns > 0) {
-    var guess = Number(prompt(tryAGuess + " You have " + turns + " turns left!"));
+    var guess = Number(prompt(tryAGuess + " You have " + turns + " chances."));
     if (guess === ranNum) {
       alert("Correct! You win all the things!");
       break;
@@ -82,6 +88,9 @@ var turns = 5;
       turns = turns - 1;
     }
   }
+}
+
+guessingGame();
 
 
 
