@@ -19,27 +19,30 @@ function wannaPlay() {
       return;
     }
 
-  var born = prompt(userName + ", was I born here in Washington?").toLowerCase();
+//moving questions and answers into arrays
+  var questions = ["Was I born here in Washington?", "Am I older than 30 years old?",
+   "Do I have any pets?", "How many years have I lived in Seattle?", "Do I live within 5 miles of Code Fellows?",
+   "I'm thinking of a number between 1 and 10, can you guess it?"];
+  var answers = ["no", "yes", "yes", "13", "no", ranNum];
+
+  var born = prompt(questions[0]).toLowerCase();
   console.log("correct answer is no");
-  alert("You guessed: " + born);
     if ((born === "no") || (born === "n")) {
       document.getElementById("alert1").innerHTML = "That's correct " + userName + ", I was born in the Philippines.";
     } else {
       document.getElementById("alert1").innerHTML = "I'm sorry, " + userName + ", but you're wrong. I was born in the Philippines.";
     }
 
-  var age = prompt("Am I older than 30 years old?").toLowerCase();
+  var age = prompt(questions[1]).toLowerCase();
   console.log("correct answer is yes");
-  alert("You guessed: " + age);
     if ((age === "yes") || (age === "y")) {
       document.getElementById("alert2").innerHTML = "That's correct, " + userName + "! I am 35 (ugh) years old.";
     } else {
       document.getElementById("alert2").innerHTML = "That's not right " + userName + ", I am actually 35 years old.";
     }
 
-  var pets = prompt("Do I have any pets?").toLowerCase();
+  var pets = prompt(questions[2]).toLowerCase();
   console.log("correct answer is yes");
-  alert("You guessed: " + pets);
     if ((pets === "yes") || (pets === "y")) {
       document.getElementById("alert3").innerHTML = "That's correct, " + userName + "! I have a big goofy dog named Rocky!";
     } else {
@@ -47,9 +50,8 @@ function wannaPlay() {
     }
 
 //including a 4th ? to add a numerical value
-  var timeHere = prompt("How many years have I lived in Seattle?");
+  var timeHere = prompt(questions[3]);
     console.log("13 years");
-    alert("You guessed: " + timeHere);
       if (timeHere > "13") {
         document.getElementById("alert4").innerHTML = "Too high. How old do you think I am, " + userName + "?";
       } else if (timeHere < "13") {
@@ -59,9 +61,8 @@ function wannaPlay() {
       }
 
 //adding a 5th yes/no question to the game
-  var commute = prompt("Do I live within 5 miles of Codefellows?");
+  var commute = prompt(questions[4]);
     console.log("No, I live 7 miles away.");
-    alert("You guessed: " + commute);
       if ((commute === "yes") || (commute === "y")) {
         document.getElementById("alert5").innerHTML = "Nope. Sorry, " + userName + ". I live about 7 miles south of Codefellows.";
       } else {
@@ -74,7 +75,7 @@ var tryAGuess = "I'm thinking of a number between 1 and 10, can you guess it?";
 var turns = 5;
 console.log("It is " + ranNum);
   while (turns > 0) {
-    var guess = Number(prompt(tryAGuess + " You have " + turns + " chances."));
+    var guess = Number(prompt(questions[5] + " You have " + turns + " chances."));
     if (guess === ranNum) {
       document.getElementById("alert6").innerHTML = "Correct! You win all the things!";
       break;
