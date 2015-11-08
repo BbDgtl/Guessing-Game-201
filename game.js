@@ -8,16 +8,10 @@
 
 //Adding functions to the game 11/06/2015
 //Moved ALL alerts into the DOM.
-var userName = prompt("What's your name?");
 
 function wannaPlay() {
-  var gameOn = prompt("Hello there, " + userName + ". Want to play a game?").toLowerCase();
-    if ((gameOn === "yes") || (gameOn === "y")) {
-      alert("Right on! Let's begin.");
-    } else {
-      alert("That's a shame, maybe next time!");
-      return;
-    }
+  var userName = prompt("What's your name?");
+  var gameOn = prompt("Hello there, " + userName + ". Let's begin!").toLowerCase();
 
 //moving questions and answers into arrays
   var questions = ["Was I born here in Washington?", "Am I older than 30 years old?",
@@ -108,7 +102,6 @@ console.log("It is " + ranNum);
   }
 }
 
-wannaPlay();
 
 
 
