@@ -29,6 +29,7 @@ function wannaPlay() {
   console.log("correct answer is no");
     if ((born === "no") || (born === "n")) {
       document.getElementById("alert1").innerHTML = "That's correct " + userName + ", I was born in the Philippines.";
+      document.getElementById("alert1").innerHTML = "<img src='http://guidetropical.com/wp-content/uploads/2013/08/Philippines-Islands.jpg' height='200px' width='200px'>";
     } else {
       document.getElementById("alert1").innerHTML = "I'm sorry, " + userName + ", but you're wrong. I was born in the Philippines.";
     }
@@ -37,6 +38,7 @@ function wannaPlay() {
   console.log("correct answer is yes");
     if ((age === "yes") || (age === "y")) {
       document.getElementById("alert2").innerHTML = "That's correct, " + userName + "! I am 35 (ugh) years old.";
+      document.getElementById("alert2").innerHTML = "<img src='https://img0.etsystatic.com/026/0/8640774/il_340x270.597273002_sdhj.jpg' height='200px' width='200px'>";
     } else {
       document.getElementById("alert2").innerHTML = "That's not right " + userName + ", I am actually 35 years old.";
     }
@@ -45,6 +47,7 @@ function wannaPlay() {
   console.log("correct answer is yes");
     if ((pets === "yes") || (pets === "y")) {
       document.getElementById("alert3").innerHTML = "That's correct, " + userName + "! I have a big goofy dog named Rocky!";
+      document.getElementById("alert3").innerHTML = "<img src='https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11129538_10152949059123250_1361773881257655722_n.jpg?oh=9b64c580968828f642b747ea453a821e&oe=56BAF96B' height='200px' width='200px'>";
     } else {
       document.getElementById("alert3").innerHTML = "Wrong! " + userName + ", I have a dog named Rocky... do you even know me?";
     }
@@ -58,6 +61,7 @@ function wannaPlay() {
         alert("Too low, sorry.");
       } else {
         document.getElementById("alert4").innerHTML = "Correct! I've lived here for 13 years now.";
+        document.getElementById("alert4").innerHTML = "<img src='http://actionmovingcompany.com/wp-content/uploads/2015/07/seattle-storage-service.jpg' height='200px' width='200px' >";
       }
 
 //adding a 5th yes/no question to the game
@@ -67,6 +71,7 @@ function wannaPlay() {
         document.getElementById("alert5").innerHTML = "Nope. Sorry, " + userName + ". I live about 7 miles south of Codefellows.";
       } else {
         document.getElementById("alert5").innerHTML = "Correct! I live about 7 miles south of Codefellows.";
+        document.getElementById("alert5").innerHTML = "<img src='https://cdn.evbuc.com/images/1432181/3111333942/1/logo.png'>";
       }
 
 //adding a 6th question to the game, this time with a numeric value.
@@ -78,6 +83,7 @@ console.log("It is " + ranNum);
     var guess = Number(prompt(questions[5] + " You have " + turns + " chances."));
     if (guess === ranNum) {
       document.getElementById("alert6").innerHTML = "Correct! You win all the things!";
+      document.getElementById("alert5").innerHTML = "<img src='http://burienlittletheatre.org/blog/wp-content/uploads/2015/09/Modern-fashion-party.jpeg' height='200px' width='200px'>";
       break;
     } else {
       tryAGuess = "WRONG!";
