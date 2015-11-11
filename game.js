@@ -11,7 +11,7 @@
 
 function wannaPlay() {
   var userName = prompt("What's your name?");
-  var gameOn = prompt("Hello there, " + userName + ". Let's begin").toLowerCase();
+  var gameOn = alert("Hello there, " + userName + ". Let's begin");
   if (userName === "") {
     return;
   }
@@ -47,7 +47,7 @@ function wannaPlay() {
   var pets = prompt(questions[2]).toLowerCase();
   console.log("correct answer is yes");
     if ((pets === answers[2]) || (pets === answers[3])) {
-      document.getElementById("alert2").style.color = "green";
+      document.getElementById("alert3").style.color = "green";
       document.getElementById("alert3").innerHTML = "That's correct, " + userName + "! I have a big goofy dog named Rocky!";
       document.getElementById("rocky").innerHTML = "<img src='https://scontent-sea1-1.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/11129538_10152949059123250_1361773881257655722_n.jpg?oh=9b64c580968828f642b747ea453a821e&oe=56BAF96B' height='200px' width='200px'>";
     } else {

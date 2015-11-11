@@ -1,0 +1,54 @@
+
+      .button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 17px;
+        background-color: orange;
+        border: solid black 1px;
+      }
+
+      .title {
+        border: solid 1px black;
+        background-color: orange;
+      }
+
+      .mainHeading {
+        color: white;
+        padding-left: 10px;
+        position: relative;
+        text-align: center;
+      }
+
+      .you {
+        color: black;
+        font-style: italic;
+      }
+
+      body {
+        background-color: gray;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .questions {
+        background-color: orange;
+        width: 500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .correct {
+        color: green;
+      }
+
+      .incorrect {
+        color: red;
+      }
