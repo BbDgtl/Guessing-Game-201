@@ -11,7 +11,10 @@
 
 function wannaPlay() {
   var userName = prompt("What's your name?");
-  var gameOn = prompt("Hello there, " + userName + ". Let's begin!").toLowerCase();
+  var gameOn = prompt("Hello there, " + userName + ". Let's begin").toLowerCase();
+  if (userName === "") {
+    return;
+  }
 
 //moving questions and answers into arrays
   var questions = ["Was I born here in Washington?", "Am I older than 30 years old?",
